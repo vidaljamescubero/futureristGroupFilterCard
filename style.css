@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.duda-container {
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.filter-card-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.filter-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px 20px;
+    height: auto;
+    width: 1440px;
+    padding: 20px 10px;
+}
+
+.search-container {
+    width: 400px;
+    min-height: 100px;
+    border: 1px solid #FFD580;
+    padding: 20px 40px 40px 20px;
+}
+
+.search-title {
+    font-weight: 700;
+    font-size: 23px;
+    color: #000;
+    text-align: left;
+}
+
+.search-body {
+    margin: 10px 0 20px 0;
+    color: #000;
+    text-align: left;
+}
+
+.search-categories {
+    padding-left: 10px;
+}
+
+.search-categories-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search-categories-title>.fa {
+    font-size: 24px;
+    color: #FFA500;
+    margin-right: 10px;
+}
+
+.search-categories-title .search-categories-title-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+.search-categories-choice-container {
+    position: relative;
+    margin: 10px 0 5px 10px;
+    max-height: 78px;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    max-width: 100%;
+}
+
+.search-categories-choice-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.search-categories-choice-container::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.search-categories-choice-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #FFA500;
+}
+
+
+.search-categories-choice {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px 5px 0;
+}
+
+.search-categories-choice .fa {
+    margin-right: 10px;
+    color: #FFA500;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.search-categories-choice:hover>.fa {
+    opacity: 0.5;
+}
+
+.selected-category>.fa {
+    opacity: 1 !important;
+}
+
+.search-categories-choice-text {
+    color: #000;
+    text-align: left;
+}
+
+.category-view-more {
+    margin-left: 34px;
+    cursor: pointer;
+    text-align: left;
+    color: #000;
+}
+
+.category-view-more .fa {
+    margin-left: 5px;
+}
+
+.filter-groups {
+    margin-top: 20px;
+}
+
+.filter-group-title {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.filter-group-title>.fa {
+    font-size: 20px;
+    color: #FFA500;
+    margin-right: 10px;
+}
+
+.filter-group-title span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+.filter-container {
+    margin-top: 20px;
+}
+
+.filter-title {
+    font-weight: 600;
+    text-align: left;
+    color: #000;
+}
+
+.filter-search-container {
+    margin-top: 10px;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    max-height: 60px;
+    width: 100%;
+}
+
+.filter-search-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.filter-search-container::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.filter-search-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #FFA500;
+}
+
+.filter-choice {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.filter-box {
+    height: 10px;
+    width: 10px;
+    border: 1px solid #FFA500;
+}
+
+.selected-filter .filter-box {
+    background-color: #FFA500;
+}
+
+.filter-text {
+    width: 100%;
+    white-space: pre-wrap;
+    text-align: left;
+    color: #000;
+}
+
+.filter-view-more {
+    padding-left: 20px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    cursor: pointer;
+    display: none;
+    text-align: left;
+    color: #000;
+}
+
+.filter-choice:hover>.filter-box {
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
+.result-container {
+    width: calc(100% - 420px);
+    min-height: 200px;
+    border: 1px solid #FFD580;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.result-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.result-container::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.result-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #FFA500;
+}
+
+.result-card-container {
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    justify-content: center;
+    gap: 20px 15px;
+    flex-wrap: wrap;
+}
+
+.result-card {
+    width: 300px;
+    height: 332px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .25) 0 3px 11px 0 !important;
+    -moz-box-shadow: rgba(0, 0, 0, .25) 0 3px 11px 0 !important;
+    -webkit-box-shadow: rgba(0, 0, 0, .25) 0 3px 11px 0 !important;
+    cursor: pointer;
+    position: relative;
+}
+
+.result-image-container {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 200px;
+}
+
+.result-image-relative-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.result-image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 40%;
+    transition: 0.3s ease-in-out;
+}
+
+.result-text-container {
+    position: absolute;
+    top: 220px;
+    padding: 0 20px;
+    font-weight: bolder;
+    color: #000;
+}
+
+@media only screen and (min-width: 769px) {
+    .result-card:hover > .result-image-container > .result-image-relative-container > img {
+        transform: scale(1.2);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .filter-card {
+        flex-direction: column;
+    }
+
+    .filter-card {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .result-container {
+        width: 100%;
+    }
+}
